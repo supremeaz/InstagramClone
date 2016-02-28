@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.arthur.instagramclone.SignupActivity"
+    android:padding="0dp"
+    android:background="@drawable/instagrambackground"
+    android:id="@+id/relativeLayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Signup"
+        android:id="@+id/iconView"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:alpha="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailField"
+        android:hint="e-mail"
+        android:layout_below="@+id/usernameField"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/pwField"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:password="true"
+        android:layout_below="@+id/emailField"
+        android:hint="password" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/confirmpwField"
+        android:layout_alignEnd="@+id/pwField"
+        android:layout_marginTop="10dp"
+        android:password="true"
+        android:layout_below="@+id/pwField"
+        android:hint="confirm password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/confirmB"
+        android:alpha=".5"
+        android:onClick="confirmSignup"
+        android:layout_marginTop="117dp"
+        android:layout_below="@+id/confirmpwField"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/usernameField"
+        android:hint="username"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/iconView"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
